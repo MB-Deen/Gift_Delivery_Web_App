@@ -118,7 +118,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#deleteConfirmationPage">
+						<a href="#deleteConfirmationPage" id="DeleteOrders">
 							<img src="img/delete.png" />
 							<div>
 								<h3 class = "fcolor">Delete orders</h3>		
@@ -263,7 +263,7 @@
 			<div class="wrap">
 				<div role="main" class="ui-content">
 					<ul id="orderList" data-role="listview" data-inset="true"></ul>
-					<a href="#homePage" data-role="button" data-theme="b" class="ui-btn ui-shadow ui-corner-all ui-btn-d" id="seeAndDeleteOrders">Done</a>
+					<a href="#homePage" data-role="button" data-theme="b" class="ui-btn ui-shadow ui-corner-all ui-btn-d">Done</a>
 				  </div>
 			</div>
 			<div data-role="footer" data-theme="d" data-position="fixed" class="footer">
@@ -274,22 +274,6 @@
 
 	</div>
 
-	<!-- Order Delete Page  -->
-	<div data-role="page" id="deleteConfirmationPage">
-		<div data-role="header" data-theme="d" data-position="fixed">
-			<a href="javascript:history.go(-1)" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">go
-				back</a>
-			<h1>Delete Confirmation</h1>
-			<a href="#homePage" rel="external" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">home</a>
-		</div>
-		<div data-role="content">
-			<p id="deleteMsg"></p>
-			<a href="#homePage" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-d" id="doneBtn">Done</a>
-		</div>
-		<div data-role="footer" data-theme="d" data-position="fixed" class="footer">
-			<p>Copyright © Gift Delivery 2024</p>
-		</div>
-	</div>
 	<!------------------------Order Confirmation page---------------------------->
 	<div data-role="page" id="orderConfirmationPage">
 		<div data-role="header" data-theme="d" data-position="fixed">
@@ -313,7 +297,28 @@
 	</div>
 
 	<!------------------------Order List page---------------------------->
-	
+		<!-- Order Delete Page  -->
+		<div data-role="page" id="deleteConfirmationPage">
+			<div data-role="header" data-theme="d" data-position="fixed">
+				<a href="javascript:history.go(-1)" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">go
+					back</a>
+				<h1>Delete Confirmation</h1>
+				<a href="#homePage" rel="external" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">home</a>
+			</div>
+			<div data-role="content" id="content">
+				
+				<div class="wrap">
+					<div role="main" class="ui-content">
+						<p id="deleteMsg" data-inset="true"></p>
+						<a href="#homePage" data-role="button" data-theme="b" class="ui-btn ui-shadow ui-corner-all ui-btn-d">Done</a>
+					  </div>
+				</div>
+				<div data-role="footer" data-theme="d" data-position="fixed" class="footer">
+					<p>Copyright © Gift Delivery 2024</p>
+				</div>
+			</div>
+		
+		</div>
 	
 	<!------------------------Delete Confirmation page---------------------------------->
 	
